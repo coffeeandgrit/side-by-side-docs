@@ -2,6 +2,7 @@
     <head>
         <link href='./refined3.css' rel='stylesheet'></link>
         <link href='./prism.css' rel='stylesheet'></link>
+        <script src='./prism.js'></script>
     <body>
         <div>
             <div class='navigation'>
@@ -60,7 +61,7 @@
                         <div class='example'>
                             <div class='copy'>
                                 {{#each this.examples}}
-                                    {{documentation_example this}}
+                                {{{documentation_example this}}}
                                 {{/each}}
                             </div>
                         </div>
