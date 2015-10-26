@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <link href='./refined3.css' rel='stylesheet'></link>
+    <body>
+        <div>
+            <div class='navigation'>
+                <div class='brand'>
+                    <div class='copy'>
+                        super-sweet branding
+                    </div>
+                </div>
+                <div class='scroll nav'>
+                    <div class='scrollpad'>&nbsp;</div>
+                    <ul>
+                        {{#each navgationLinks}}
+                            {{documentation_link this}}
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div class='documentation'>
+                <div class='scroll'>
+                <div class='section'>
+                    <!-- special row: col one is empty, col two has the language picker' -->
+                    <!-- this is sticky -->
+                    <div class='description'>
+                        <div class='selections hidden'>
+                            <a href='#' class='selection'>&nbsp;</a>
+                        </div>
+                    </div>
+                    <div class='example'>
+                        <div class='language-selector'>
+                            <div class='selections'>
+                            {{#each languages}}
+                                {{documentation_language this}}
+                            {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{#each sections}}
+                <div class='section'>
+                    <div class='description'>
+                        <div class='copy'>
+                            {{{this.content}}}
+                        </div>
+                    </div>
+                    <div class='example'>
+                        <div class='copy'>
+                            {{#each this.examples}}
+                                {{documentation_example this}}
+                            {{/each}}
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

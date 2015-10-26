@@ -189,6 +189,11 @@ logger.add(logger.transports.Console, {
         });
     })
     .then(function(p) {
-        console.log(util.inspect(p));
+        console.log(util.inspect(p, null, 5));
         return p;
+    })
+    .then(function(p){
+        //reorganize data for template
+        delete p.sections;
+        
     });
