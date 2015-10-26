@@ -1,5 +1,5 @@
 var Handlebars = require('handlebars'),
-    $ = require('cheerio');
+    cheerio = require('cheerio');
 
 module.exports = exports = function() {
     Handlebars.registerHelper('documentation_language', function(language) {
