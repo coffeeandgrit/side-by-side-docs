@@ -9,7 +9,7 @@ module.exports = exports = function() {
         var $ = cheerio.load('<a></a>');
         $('a').attr('class', 'selection');
         $('a').attr('href', '#');
-        //$('a').text(language);
+        $('a').text(language);
         return $.html();
     });
 };
