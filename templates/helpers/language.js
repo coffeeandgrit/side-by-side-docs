@@ -10,6 +10,7 @@ module.exports = exports = function() {
         $('a').attr('class', 'selection');
         $('a').attr('href', '#');
         $('a').text(language);
+        logger.silly($.html());
         return $.html();
     });
 };

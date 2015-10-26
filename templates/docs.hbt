@@ -1,6 +1,7 @@
 <html>
     <head>
         <link href='./refined3.css' rel='stylesheet'></link>
+        <link href='./prism.css' rel='stylesheet'></link>
     <body>
         <div>
             <div class='navigation'>
@@ -12,7 +13,7 @@
                 <div class='scroll nav'>
                     <div class='scrollpad'>&nbsp;</div>
                     <ul>
-                        {{#each navgationLinks}}
+                        {{#each navigationLinks}}
                             {{documentation_link this}}
                         {{/each}}
                     </ul>
@@ -32,7 +33,7 @@
                         <div class='language-selector'>
                             <div class='selections'>
                             {{#each languages}}
-                                {{documentation_language this}}
+                                {{{documentation_language this}}}
                             {{/each}}
                             </div>
                         </div>
@@ -46,13 +47,25 @@
                         </div>
                     </div>
                     <div class='example'>
-                        <div class='copy'>
-                            {{#each this.examples}}
-                                {{documentation_example this}}
-                            {{/each}}
-                        </div>
+                        <div class='copy'>&nbsp;</div>
                     </div>
                 </div>
+                    {{#each topics}}
+                    <div class='section'>
+                        <div class='description'>
+                            <div class='copy'>
+                                {{{this.content}}}
+                            </div>
+                        </div>
+                        <div class='example'>
+                            <div class='copy'>
+                                {{#each this.examples}}
+                                    {{documentation_example this}}
+                                {{/each}}
+                            </div>
+                        </div>
+                    </div>
+                    {{/each}}
                 {{/each}}
             </div>
         </div>
