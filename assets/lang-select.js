@@ -70,3 +70,13 @@ $(function() {
         .first()
         .addClass('active');
 });
+
+$(function(){
+    var app = Sammy('body', function(){
+        var self = this;
+        self.get('/:topic/:lang?', function(context){
+            context.params.lang = context.params.lang || $('div.selections a').first().text();
+            $('.documentation').scrollTo('#'+context.topic);
+        });
+    });
+});
