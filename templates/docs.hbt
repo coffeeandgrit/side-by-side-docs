@@ -2,6 +2,7 @@
     <head>
         <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
         <script src='assets/jquery.waypoints.js'></script>
+        <script src='assets/sammy.js'></script>
         <link href='assets/docsugar.css' rel='stylesheet'></link>
         <link href='assets/prism.css' rel='stylesheet'></link>
         <link href='assets/reflex.css' rel='stylesheet'></link>

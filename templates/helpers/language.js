@@ -5,12 +5,10 @@ var Handlebars = require('handlebars'),
 
 module.exports = exports = function() {
     Handlebars.registerHelper('documentation_language', function(language) {
-        logger.silly('language: ' + util.inspect(language));
         var $ = cheerio.load('<a></a>');
         $('a').attr('class', 'selection');
         $('a').attr('href', '#');
         $('a').text(language);
-        logger.silly($.html());
         return $.html();
     });
 };
