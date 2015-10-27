@@ -1,5 +1,6 @@
 var Handlebars = require('handlebars'),
     logger = require('winston'),
+    _ = require('lodash'),
     util = require('util'),
     cheerio = require('cheerio');
 
