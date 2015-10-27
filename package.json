@@ -1,5 +1,5 @@
 {
-  "name": "stripe-knockoff",
+  "name": "side-by-side-docs",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
@@ -28,9 +28,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@bitbucket.org/rossersp/stripe-knockoff.git"
+    "url": "git+ssh://git@github.com/coffeeandgrit/side-by-side-docs.git"
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/rossersp/stripe-knockoff#readme"
+  "homepage": "https://github.com/coffeeandgrit/side-by-side-docs"
 }
