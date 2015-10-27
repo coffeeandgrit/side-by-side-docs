@@ -20,7 +20,9 @@
     "waypoints": "^4.0.0",
     "winston": "^1.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cng-standalone": "git@github.com:coffeeandgrit/standalone.git#0.1.3" 
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
