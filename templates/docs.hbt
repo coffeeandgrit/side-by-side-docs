@@ -1,11 +1,12 @@
 <html>
     <head>
         <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
-        <link href='./refined4.css' rel='stylesheet'></link>
-        <link href='./prism.css' rel='stylesheet'></link>
-        <link href='./reflex.css' rel='stylesheet'></link>
-        <script src='./lang-select.js'></script>
-        <script src='./prism.js'></script>
+        <script src='assets/jquery.waypoints.js'></script>
+        <link href='assets/docsugar.css' rel='stylesheet'></link>
+        <link href='assets/prism.css' rel='stylesheet'></link>
+        <link href='assets/reflex.css' rel='stylesheet'></link>
+        <script src='assets/lang-select.js'></script>
+        <script src='assets/prism.js'></script>
     <body>
         <div class='grid'>
             <div class='grid__col-2'>
@@ -14,7 +15,7 @@
                         super-sweet branding
                     </div>
                 </div>
-                <div class='scroll'>
+                <div class='scroll navigation'>
                     <div class='scrollpad'>&nbsp;</div>
                     <ul>
                         {{#each navigationLinks}}
@@ -24,7 +25,7 @@
                 </div>
             </div>
             <div class='grid__col-10'>
-                <div class='scroll'>
+                <div class='scroll documentation'>
                     <div class='section grid'>
                         <!-- special row: col one is empty, col two has the language picker' -->
                         <!-- this is sticky -->
@@ -41,7 +42,7 @@
                         </div>
                     </div>
                     {{#each sections}}
-                    <div class='section grid' id='{{anchor}}'>
+                    <div class='section grid topic' id='{{anchor}}'>
                         <div class='description grid__col-6'>
                             <div class='copy'>
                                 {{{this.content}}}
@@ -52,7 +53,7 @@
                         </div>
                     </div>
                         {{#each topics}}
-                        <div class='section grid'>
+                        <div class='section grid topic' id='{{anchor}}'>
                             <div class='description grid__col-6'>
                                 <div class='copy'>
                                     {{{this.content}}}

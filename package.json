@@ -6,6 +6,8 @@
   "dependencies": {
     "bluebird": "^2.10.2",
     "cheerio": "^0.19.0",
+    "cpr": "^0.4.3",
+    "flexbox-grid": "^1.0.0",
     "glob": "^5.0.15",
     "handlebars": "^4.0.3",
     "html-entities": "^1.2.0",
@@ -14,6 +16,7 @@
     "mkdirp": "^0.5.1",
     "prismjs": "^1.2.0",
     "rimraf": "^2.4.3",
+    "waypoints": "^4.0.0",
     "winston": "^1.1.1"
   },
   "devDependencies": {},

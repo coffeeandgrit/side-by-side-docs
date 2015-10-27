@@ -17,6 +17,6 @@ logger.add(logger.transports.Console, {
     colorize: true
 });
 
-make(__dirname, path.resolve(__dirname, 'output', 'doc.html')).then(function(){
+make(__dirname, path.resolve(__dirname, 'output')).then(function(){
     logger.info('done');
 });
