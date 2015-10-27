@@ -126,3 +126,22 @@ body {
   line-height:1.5;
   margin:0px
 }
+
+div.navigation ul {
+  list-style-type:none;
+}
+
+div.navigation ul a {
+  text-decoration: none;
+  color: #242526;
+}
+
+div.navigation ul a:hover{
+  text-decoration: underline;
+}
+
+div.navigation ul a.active{
+  color: #0081D6;
+  font-weight:bold;
+}
+  
