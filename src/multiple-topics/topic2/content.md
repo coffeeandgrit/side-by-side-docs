@@ -1,4 +1,4 @@
-#topic 2
+## topic 2
 
 the header will be used in the nav pane as a sub-link if >2 topics.
 
