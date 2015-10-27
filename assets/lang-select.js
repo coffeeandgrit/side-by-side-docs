@@ -66,6 +66,19 @@ $(function() {
             });
         });
 
+    $('.documentation').scroll(function(){
+        Waypoint.enableAll();
+    });
+
+    $('.navigation a').click(function(event){
+        console.log('clicked on %s', $(event.target).text());
+        Waypoint.disableAll();
+        $('.navigation a').each(function(ix, iv){
+            $(iv).removeClass('active');
+        });
+        $(event.target).addClass('active');
+    });
+
     $('.navigation a')
         .first()
         .addClass('active');

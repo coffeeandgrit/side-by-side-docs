@@ -5,7 +5,7 @@ var Handlebars = require('handlebars'),
 
 module.exports = exports = function() {
     Handlebars.registerHelper('documentation_language', function(language) {
-        var $ = cheerio.load('<a></a>');
+        var $ = cheerio.load('<a onclick="return false;"></a>');
         $('a').attr('class', 'selection');
         $('a').attr('href', '#');
         $('a').text(language);

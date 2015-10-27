@@ -40,7 +40,7 @@
 
 
 .scroll {
-  height:100%;
+  height:99%;
   overflow-y: scroll;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .scroll.nav{
-  height:100%;
+  height:100vh;
   background-color: #F3f3f3
 }
 
@@ -124,7 +124,7 @@ a.selection{
 
 body {
   line-height:1.5;
-  margin:0px
+  margin:0px;
 }
 
 div.navigation ul {
@@ -147,4 +147,8 @@ div.navigation ul a.active{
   
 ul {
   padding-left:16px;
+}
+
+html, body{
+  height:100%
 }
