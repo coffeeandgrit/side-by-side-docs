@@ -1,8 +1,10 @@
 <html>
     <head>
+        <script src='https://code.jquery.com/jquery-2.1.4.js'></script>
         <link href='./refined4.css' rel='stylesheet'></link>
         <link href='./prism.css' rel='stylesheet'></link>
         <link href='./reflex.css' rel='stylesheet'></link>
+        <script src='./lang-select.js'></script>
         <script src='./prism.js'></script>
     <body>
         <div class='grid'>
@@ -16,20 +18,17 @@
                     <div class='scrollpad'>&nbsp;</div>
                     <ul>
                         {{#each navigationLinks}}
-                            {{documentation_link this}}
+                            {{{documentation_link this}}}
                         {{/each}}
                     </ul>
                 </div>
             </div>
             <div class='grid__col-10'>
                 <div class='scroll'>
-                   <div class='section grid'>
+                    <div class='section grid'>
                         <!-- special row: col one is empty, col two has the language picker' -->
                         <!-- this is sticky -->
                         <div class='description grid__col-6'>
-                            <div class='selections hidden'>
-                                <a href='#' class='selection'>&nbsp;</a>
-                            </div>
                         </div>
                         <div class='example grid__col-6'>
                             <div class='language-selector'>
@@ -42,7 +41,7 @@
                         </div>
                     </div>
                     {{#each sections}}
-                    <div class='section grid'>
+                    <div class='section grid' id='{{anchor}}'>
                         <div class='description grid__col-6'>
                             <div class='copy'>
                                 {{{this.content}}}

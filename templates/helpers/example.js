@@ -6,6 +6,11 @@ var Handlebars = require('handlebars'),
 module.exports = exports = function() {
     Handlebars.registerHelper('documentation_example', function(example) {
         logger.silly('example: ' + util.inspect(example));
-        return example.content;
+
+        var $ = cheerio.load('<div></div>');
+        $('div').addClass(example.language);
+        $('div').addClass('code');
+        $('div').append(example.content);
+        return $.html();
     });
 };

@@ -113,6 +113,10 @@ a.selection{
   background-image: none;
 }
 
+.code{
+  display:none;
+}
+
 
 *::before, *::after {
   box-sizing:inherit;
