@@ -21,7 +21,7 @@
     "winston": "^1.1.1"
   },
   "devDependencies": {
-    "cng-standalone": "git@github.com:coffeeandgrit/standalone.git#0.1.3" 
+    "cng-standalone": "git://github.com/coffeeandgrit/standalone" 
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
